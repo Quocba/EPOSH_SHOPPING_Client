@@ -1,0 +1,27 @@
+@import '../../../../../utils/variables.scss';
+
+.seller-finance__released-detail-container {
+    height: auto;
+
+    .seller-finance__released-list-header {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 30px 0;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .seller-finance__released-list-footer {
+        margin: 0 30px 30px;
+
+        .seller-finance__released-list-detail {
+            width: 100%;
+            height: 100%;
+            margin: 10vh 0;
+            display: flex;
+            padding: 0 10vh;
+            justify-content: center;
+
+        }
+    }
+}

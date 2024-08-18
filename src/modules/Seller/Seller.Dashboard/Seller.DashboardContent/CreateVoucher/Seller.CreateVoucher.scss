@@ -1,0 +1,52 @@
+@import "../../../../../utils/variables.scss";
+
+.seller-create-voucher__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 20px 1.7rem 20px;
+
+  @media screen and (min-width: 740px) and (max-width: 1194px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+  }
+
+  .seller-create-voucher__items {
+    display: flex;
+    flex: 0 0 23.7%;
+    height: 151.6px;
+    margin-top: 15px;
+    border: 1px solid $borderDividerAndDesc;
+    border-radius: 10px;
+
+    @media screen and (min-width: 740px) and (max-width: 1194px) {
+      flex-direction: column;
+      width: 90%;
+      height: 90%;
+    }
+
+    .seller-create-voucher__item-text {
+      margin-left: 7px;
+
+      .seller-item__title {
+        font-size: 22px;
+        color: black;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+          font-size: 16px;
+        }
+      }
+
+      .seller-item__desc {
+        font-size: 16px;
+        color: $borderDividerAndDesc;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

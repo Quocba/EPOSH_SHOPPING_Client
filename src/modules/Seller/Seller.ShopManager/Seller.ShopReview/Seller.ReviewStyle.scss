@@ -1,0 +1,69 @@
+@import '../../../../utils/variables.scss';
+
+.seller-shop-review__container {
+    display: flex;
+
+    .seller__header {
+        width: 100%;
+    }
+
+    .seller-shop-review-right__content {
+        flex: 5;
+        position: relative;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+            width: 50%;
+        }
+
+        .seller-shop-review__content {
+            margin: 30px;
+            height: auto;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+
+            .content-top {
+                display: flex;
+                justify-content: space-between;
+
+                .seller-shop-review__title {
+                    margin-left: 30px;
+                    padding-top: 30px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $black;
+                }
+
+                .seller-shop-review__rating {
+                    margin-right: 30px;
+                    padding-top: 30px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: $primary;
+                }
+            }
+
+            .seller-shop-review__list-detail {
+                margin: 30px 30px 0 30px;
+                height: auto;
+                padding-bottom: 30px;
+
+                .seller-shop-review__header {
+                    display: grid;
+                    grid-template-columns: 3fr 5fr;
+                    padding: 15px 30px;
+
+                    .left {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .right {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

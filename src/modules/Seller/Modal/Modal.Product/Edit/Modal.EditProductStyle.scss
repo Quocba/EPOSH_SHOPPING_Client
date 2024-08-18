@@ -1,0 +1,17 @@
+@import '../../../../../utils/variables.scss';
+
+
+.modal-modal-infor {
+    display: flex;
+    align-items: center;
+
+    .modal-modal-label {
+        width: 10%;
+        margin-top: 20px;
+    }
+
+    .modal-modal-input {
+        width: 90%;
+        margin-top: 20px;
+    }
+}

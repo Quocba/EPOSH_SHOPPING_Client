@@ -1,0 +1,105 @@
+@import '../../../../../utils/variables.scss';
+
+.seller-product__live-list-footer {
+    margin-top: 30px;
+
+    .seller-product__live-list-top {
+        display: grid;
+        grid-template-columns: 3.5fr 5.5fr;
+
+
+        .seller-product-live-list__left {
+            margin-left: 30px;
+        }
+
+        .seller-product-live-list__right {
+            display: flex;
+            justify-content: space-between;
+
+            .seller-product-live-list__action {
+                width: 110px;
+                margin-right: 30px;
+                text-align: center;
+            }
+        }
+
+        .seller-product-live-list__left,
+        .seller-product-live-list__right {
+            padding: 10px;
+        }
+    }
+
+    .seller-product__live-list-bottom {
+        height: auto;
+
+        .seller-product__live-information-rows {
+            margin: 1rem 0px;
+            display: grid;
+            grid-template-columns: 3fr 6fr;
+            border-radius: 0 0 5px 5px;
+            padding: 15px;
+
+            .seller-product__live-list-infor-product--left {
+                display: flex;
+                align-items: center;
+
+                .seller-product__live-list-img-product {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+
+                .seller-product__live-list-name-product {
+                    width: 15rem;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2; // Số dòng tối đa hiển thị
+                    -webkit-box-orient: vertical;
+                    transition: -webkit-line-clamp 0.1s;
+                    line-height: 1.6rem;
+
+                    &:hover {
+                        /* Loại bỏ rút gọn khi hover */
+                        overflow: visible;
+                        white-space: normal;
+                        -webkit-line-clamp: unset;
+                    }
+                }
+            }
+
+            .seller-product__live-list-infor-product--right {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .seller-product__live-list-price-product {
+                    width: 150px;
+                    text-align: center;
+                }
+
+                .seller-product__live-list-stock-product {
+                    width: 50px;
+                    text-align: center;
+                }
+
+                .seller-product__live-list-sales-product {
+                    width: 50px;
+                    text-align: center;
+                }
+
+                .seller-product__live-list-status-product {
+                    width: 100px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: $secondary;
+                    text-align: center;
+                    font-weight: bold;
+                    background-color: $primary;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

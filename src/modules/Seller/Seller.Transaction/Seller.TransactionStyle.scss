@@ -1,0 +1,98 @@
+@import '../../../utils/variables.scss';
+
+.seller-order__container {
+    display: flex;
+
+    .seller__header {
+        width: 100%;
+    }
+
+    .seller-order-right__content {
+        flex: 5;
+        position: relative;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+            width: 50%;
+        }
+
+        .seller-transaction__top,
+        .seller-transaction__bottom {
+            margin: 30px;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+
+            .seller-transaction__title {
+                margin: 0 0 30px 30px;
+                padding-top: 30px;
+                color: $black;
+                font-weight: bold;
+            }
+
+            .seller-transaction__data {
+                display: grid;
+                grid-template-columns: 3fr .1fr 3fr .1fr 3fr;
+                justify-items: start;
+                color: $black;
+                padding-bottom: 30px;
+
+                .seller-transaction__pending {
+                    margin-left: 30px;
+
+                    .seller-transaction__pending-title,
+                    .seller-transaction__pending-data {
+                        font-weight: bold;
+                    }
+                }
+
+                .seller-transaction__released {
+                    width: 100%;
+                    color: $black;
+
+                    .seller-transaction__released-left {
+                        margin-left: 30px;
+
+                        .seller-transaction__released-title,
+                        .seller-transaction__released-data {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .seller-transaction__released-right {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        justify-content: space-around;
+                        margin-top: 2.1rem;
+
+                        .seller-transaction__released-data {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .seller-transaction__cancel {
+                    margin-left: 30px;
+
+                    .seller-transaction__cancel-title,
+                    .seller-transaction__cancel-data {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .nav__items {
+            margin: 30px;
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+.filterPicker {
+    // outline: 10px solid black;
+    border: none;
+    border-radius: 10px;
+}

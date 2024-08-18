@@ -1,0 +1,80 @@
+@import "../../../../utils/variables.scss";
+
+.container-shop {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all .2s ease-in-out;
+
+    .container-image {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        img {
+            width: 100px;
+            border-radius: 50%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+    }
+
+    .container-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-rate-followers {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 12px 0;
+
+        .favourite-box {
+            width: 100px;
+            height: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $white;
+            background-color: $red;
+            border-radius: 4px;
+        }
+
+        .star-rate {
+            display: flex;
+            color: $warning;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .container-viewshop-button {
+        width: 120px;
+        height: 30px;
+        background-color: $red-blur;
+        border: 1px solid $red;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: $red;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
+
+    .container-viewshop-button:hover {
+        opacity: 0.5;
+    }
+}
+
+.container-shop:hover {
+    transform: scale(1.05);
+}

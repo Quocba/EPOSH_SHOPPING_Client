@@ -1,0 +1,42 @@
+@import '../../../utils/variables.scss';
+
+[data-theme="dark"] {
+    --body_background: #282c34;
+    --body_color: white;
+    --link-color: cyan;
+}
+
+.for_light_theme {
+    --primary-color: #302ae6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+.for_dark_theme {
+    --primary-color: #9a97f3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
+
+.seller-set-up-shop__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .seller-set-up-shop__bottom {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        background-color: $white;
+        border-radius: 10px;
+        --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+        box-shadow: 2px 4px 10px 1px $shadow;
+    }
+
+
+}

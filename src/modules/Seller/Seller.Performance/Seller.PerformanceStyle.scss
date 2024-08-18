@@ -1,0 +1,171 @@
+@import '../../../utils/variables.scss';
+
+.seller-performance__container {
+    display: flex;
+
+    .seller__header {
+        width: 100%;
+    }
+
+    .seller-performance-right__content {
+        flex: 5;
+        position: relative;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+            width: 50%;
+        }
+
+        .seller-performance__top {
+            margin: 30px;
+            height: auto;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+
+            .seller-performance__title {
+                padding-top: 30px;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+
+            .seller-performance__desc {
+                padding-top: 10px;
+                margin-bottom: 30px;
+            }
+
+            .seller-performance__title,
+            .seller-performance__desc {
+                color: $black;
+                margin-left: 30px;
+            }
+
+            .seller-performance__data {
+                display: flex;
+                justify-content: space-between;
+                margin: 0px 30px;
+                padding-bottom: 30px;
+
+                .seller-performance__list-issue,
+                .seller-performance__late-order {
+                    border: 1px solid $borderDividerAndDesc;
+                    border-radius: 5px;
+                    width: 47%;
+
+                    .seller-performance__list-issue-title,
+                    .seller-performance__late-order-title {
+                        font-weight: bold;
+                        color: $black;
+                    }
+
+                    .seller-performance__list-issue-data,
+                    .seller-performance__late-order-data {
+                        color: $performanceData;
+                        font-weight: bold;
+                    }
+
+                    .seller-performance__list-issue-desc,
+                    .seller-performance__late-order-desc {
+                        color: $grayer;
+                    }
+
+                    .seller-performance__list-issue-title,
+                    .seller-performance__list-issue-data,
+                    .seller-performance__list-issue-desc,
+                    .seller-performance__late-order-title,
+                    .seller-performance__late-order-data,
+                    .seller-performance__late-order-desc {
+                        margin-left: 1rem;
+                        padding: 8px;
+                    }
+                }
+            }
+        }
+
+        .seller-performance__bottom {
+            margin: 30px;
+            height: auto;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+
+            .seller-performance__title {
+                padding-top: 30px;
+                margin-bottom: 10px;
+                font-weight: bold;
+                margin-left: 30px;
+            }
+
+            .seller-performance__sub-title {
+                margin: 0 0 30px 30px;
+                font-weight: bold;
+            }
+
+            .seller-performance__list-violations-top,
+            .seller-performance__list-fulfilments-top,
+            .seller-performance__list-customer-service-top,
+            .seller-performance__list-customer-satisfaction-top {
+                display: grid;
+                grid-template-columns: 3fr 5fr;
+                margin: 0 30px 0 30px;
+                padding: 10px;
+
+                .seller-performance__lvt-left,
+                .seller-performance__lft-left,
+                .seller-performance__lcst-left {
+                    margin-left: 30px;
+                }
+
+                .seller-performance__lvt-right,
+                .seller-performance__lft-right,
+                .seller-performance__lcst-right {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .seller-performance__lvtr-points,
+                    .seller-performance__lftr-points,
+                    .seller-performance__lcstr-points {
+                        margin-right: 30px;
+                    }
+                }
+            }
+
+            .seller-performance__list-violations-bottom,
+            .seller-performance__list-fulfilments-bottom,
+            .seller-performance__list-customer-service-bottom,
+            .seller-performance__list-customer-satisfaction-bottom {
+                margin: 0 30px 30px 30px;
+
+                .seller-performance__lvb-rows,
+                .seller-performance__lfb-rows,
+                .seller-performance__lcs-rows {
+                    display: grid;
+                    grid-template-columns: 3fr 5fr;
+                    padding: 10px;
+
+                    .seller-performance__lvb-left,
+                    .seller-performance__lfb-left,
+                    .seller-performance__lcsb-left {
+                        margin-left: 30px;
+                    }
+
+                    .seller-performance__lvb-right,
+                    .seller-performance__lfb-right,
+                    .seller-performance__lcsb-right {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .seller-performance__lvbr-points,
+                        .seller-performance__lfbr-points,
+                        .seller-performance__lcsbr-points {
+                            margin-right: 30px;
+                            width: 98.237px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

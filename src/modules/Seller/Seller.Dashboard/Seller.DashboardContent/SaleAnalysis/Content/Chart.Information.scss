@@ -1,0 +1,117 @@
+@import "../../../../../../utils/variables.scss";
+
+.sale-analysis__container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin-top: .2rem;
+
+  @media screen and (min-width: 740px) and (max-width: 1194px) {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .sale-analysis__left {
+
+    .chart {
+      margin-bottom: 30px;
+      width: 100%;
+
+      @media screen and (min-width: 740px) and (max-width: 1194px) {
+        width: 88%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .linechart__title {
+      margin-left: 1.3rem;
+    }
+  }
+
+  .sale-analysis__right {
+
+    .featured {
+      width: 100%;
+      margin-top: 10rem;
+
+      @media screen and (min-width: 740px) and (max-width: 1194px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .featured__bottom {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 2rem;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+          justify-content: space-around;
+          margin-top: 0;
+          margin-bottom: 1.8rem;
+        }
+
+        .featured__title-orders,
+        .featured__title-rating {
+          font-size: 16px;
+
+          @media screen and (min-width: 740px) and (max-width: 1194px) {
+            font-size: 13px;
+          }
+        }
+
+        .featured__data-orders,
+        .featured__data-rate {
+          font-size: 16px;
+          text-align: center;
+          font-weight: bold;
+
+          @media screen and (min-width: 740px) and (max-width: 1194px) {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .featured__top {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 2rem;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+          justify-content: space-around;
+          margin-top: 0;
+          margin-bottom: 1.8rem;
+        }
+
+        .featured__title-money,
+        .featured__title-average,
+        .featured__title-orders,
+        .featured__title-rating {
+          font-size: 16px;
+
+          @media screen and (min-width: 740px) and (max-width: 1194px) {
+            font-size: 13px;
+          }
+        }
+
+        .featured__data-money,
+        .featured__data-average,
+        .featured__data-orders,
+        .featured__data-rate {
+          font-size: 16px;
+          text-align: center;
+          font-weight: bold;
+
+          @media screen and (min-width: 740px) and (max-width: 1194px) {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

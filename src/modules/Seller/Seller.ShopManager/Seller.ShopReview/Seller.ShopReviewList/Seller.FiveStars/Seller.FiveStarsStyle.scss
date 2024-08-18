@@ -1,0 +1,62 @@
+@import '../../../../../../utils/variables.scss';
+
+.seller-review__five-stars {
+    height: auto;
+
+    .five-stars__rows {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        padding: 15px 30px;
+
+        .left {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .product-information {
+                width: 80%;
+                display: flex;
+                align-items: center;
+
+                .product-img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                    border-radius: 5px;
+                }
+
+                .product-name {
+                    width: 100%;
+                }
+            }
+
+            .rating {
+                width: 20%;
+                text-align: center;
+            }
+        }
+
+        .right {
+            width: 100%;
+            margin-left: 30px;
+
+            .user-review {
+                height: auto;
+                line-height: 25px;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                transition: -webkit-line-clamp 0.1s;
+
+                &:hover {
+                    overflow: visible;
+                    white-space: normal;
+                    -webkit-line-clamp: unset;
+                }
+            }
+        }
+    }
+}

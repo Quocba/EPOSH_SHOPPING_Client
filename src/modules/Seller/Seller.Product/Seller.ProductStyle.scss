@@ -1,0 +1,42 @@
+@import '../../../utils/variables.scss';
+
+.seller-product__container {
+    display: flex;
+
+    .seller__header {
+        width: 100%;
+    }
+
+    .seller-product-right__content {
+        flex: 5;
+        position: relative;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+            width: 50%;
+        }
+
+        .seller-product__top-content {
+            margin: 30px;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+        }
+
+        .seller-product__bottom-content {
+            margin: 30px;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+
+        }
+
+        .seller-product__nav--items {
+            margin: 10px 20px 10px 5px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+}

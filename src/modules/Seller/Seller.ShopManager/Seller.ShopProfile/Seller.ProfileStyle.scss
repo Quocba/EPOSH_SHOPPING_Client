@@ -1,0 +1,109 @@
+@import '../../../../utils/variables.scss';
+
+.seller-shop-profile__container {
+    display: flex;
+
+    .seller__header {
+        width: 100%;
+    }
+
+    .seller-shop-profile-right__content {
+        flex: 5;
+        position: relative;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+            width: 50%;
+        }
+
+        .seller-shop-profile__content {
+            margin: 30px;
+            height: auto;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+
+            .seller-shop-profile__top {
+                .seller-shop-profile__title {
+                    margin-left: 30px;
+                    padding-top: 30px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: $black;
+                }
+
+                .seller-shop-profile__desc {
+                    margin-top: 15px;
+                    margin-left: 30px;
+                    font-size: 14px;
+                    color: $borderDividerAndDesc;
+                }
+            }
+
+            .seller-shop-profile__bottom {
+                .seller-basic-information__top {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 30px;
+
+                    .seller-basic-information__title {
+                        margin-left: 30px;
+                        font-size: 20px;
+                        color: $black;
+                    }
+
+                    .seller-basic-information__btn {
+                        margin-right: 15px;
+                    }
+                }
+
+                .seller-basic-information__bottom {
+                    padding: 30px 0;
+                    display: flex;
+                    flex-direction: row;
+
+                    .seller-basic-information__bottom-left {
+                        width: 25%;
+                        color: $black;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                        margin-left: 30%;
+                    }
+
+                    .seller-basic-information__bottom-right {
+                        width: 100%;
+                        color: $black;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-edit-information__bottom {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+
+    .modal-edit-information__bottom-left {
+        width: 25%;
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 10%;
+    }
+
+    .modal-edit-information__bottom-right {
+        width: 100%;
+        color: $black;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 2rem;
+    }
+}

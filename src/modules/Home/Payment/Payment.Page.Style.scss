@@ -1,0 +1,193 @@
+@import "../../../utils/variables.scss";
+.path {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  .home:hover {
+    color: $avatar;
+    cursor: pointer;
+  }
+}
+
+.address_delivery {
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+  // width: 72.4%;
+  height: auto;
+  top: 350px;
+  background-color: $white;
+  box-shadow: 0px 4px 4px $grayer;
+  .item_address{
+    display: flex;
+    padding-left: 30px;
+  }
+}
+
+.displayy {
+  display: block;
+}
+
+.payment {
+  width: 70%;
+  height: auto;
+  .line {
+    height: 3px;
+    // width: 100%;
+    background-position-x: -30px;
+    background-size: 116px 3px;
+    background-image: repeating-linear-gradient(
+      45deg,
+      $primary,
+      $primary 33px,
+      transparent 0,
+      transparent 41px,
+      $primaryAlt 0,
+      $primaryAlt 74px,
+      transparent 0,
+      transparent 82px
+    );
+  }
+  .address_deliver {
+    box-shadow: 0px 4px 4px $grayer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+    border-radius: 4px;
+    padding: 40px;
+    background-color: $white;
+  }
+
+  .title {
+    margin: 18px 0 10px 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    border-radius: 4px;
+    padding: 26px 40px;
+    display: flex;
+    justify-content: space-between;
+    .right {
+      width: 40%;
+      display: flex;
+    }
+  }
+  .shop_1 {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 26px 40px;
+    margin-bottom: 10px;
+    background-color: $white;
+    position: relative;
+    .product_1 {
+      background-color: $hover;
+      margin: 10px 0px 20px 0px;
+      justify-content: space-between;
+      .right {
+        display: flex;
+        width: 45%;
+        padding-right: 0px;
+      }
+      .left{
+        display: flex;
+        align-items: center;
+        width: 60%;
+      }
+    }
+    .product_1:hover {
+      border-radius: 4px;
+      scale: 1.01;
+    }
+  }
+}
+
+.total {
+  // width: 30%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: auto;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  height: 480px;
+  .right {
+    background-color: $white;
+    // margin: 0px 0px 200px 0px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    width: 400px;
+    // height: auto;
+    .voucher{
+      margin-bottom: 20px;
+      width: 100%;
+      height: 200px;
+      border: 1px solid $gray;
+      border-radius: 4px;
+      padding: 10px;
+
+    }
+    .voucher_apply{
+
+      margin: 20px 0;
+      
+      // display: flex;
+      // justify-content: space-between;
+    }
+    .cart {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .all_button {
+      display: flex;
+      justify-content: space-between;
+      .button {
+        display: flex;
+        width: 250px;
+        height: 45px;
+        border-radius: 4px;
+        background-color: $secondary;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 20px;
+      }
+      .coupon_code {
+        color: $grayer;
+        border: 1px solid $grayer;
+        border-radius: 4px;
+        width: 250px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .button:hover {
+        background-color: $primary;
+        cursor: pointer;
+      }
+    }
+    .end_button {
+      display: flex;
+      justify-content: space-between;
+      .place_order {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $primary;
+        align-items: center;
+        justify-content: center;
+      }
+      .place_order:hover {
+        background-color: $sellerPrimary;
+        cursor: pointer;
+      }
+    }
+  }
+}

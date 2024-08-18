@@ -1,0 +1,27 @@
+@import "../../../utils/variables.scss";
+
+.search-product-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 210px;
+
+    .shop-search {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .shop-list {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .product-search {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

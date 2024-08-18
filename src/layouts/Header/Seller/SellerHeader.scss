@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit");
+@import "../../../utils/variables.scss";
+
+.header {
+  background-color: $sellerPrimary;
+  color: $white;
+  height: 100px;
+  border-bottom: 0.5px solid $borderDividerAndDesc;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: $sellerHeader;
+  position: relative;
+
+  @media screen and (max-width: 1194px) {
+    height: 60px;
+  }
+
+  .title {
+    color: $white;
+    font-size: 24px;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .items {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 0;
+    margin-right: 35px;
+
+    .item__avatar {
+      margin-right: 10px;
+
+      @media screen and (max-width: 1194px) {
+        margin-right: 0;
+      }
+
+      .shop-avatar {
+        background-color: $primary;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+
+        @media screen and (max-width: 1194px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      color: $white;
+      cursor: pointer;
+
+      @media screen and (max-width: 1194px) {
+        left: .5rem;
+      }
+    }
+
+    .counter {
+      position: absolute;
+      top: -2.5px;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      background-color: $error;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: bold;
+
+      @media screen and (max-width: 1194px) {
+        width: 15px;
+        height: 15px;
+        font-size: 9px;
+      }
+    }
+  }
+}

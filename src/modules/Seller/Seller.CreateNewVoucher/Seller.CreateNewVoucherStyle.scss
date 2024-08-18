@@ -1,0 +1,76 @@
+@import '../../../utils/variables.scss';
+
+.seller-create-new-voucher__bottom {
+    margin: 30px;
+    background-color: $white;
+    border-radius: 10px;
+    --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+    box-shadow: 2px 4px 10px 1px $shadow;
+
+    .seller-create-new-voucher__title-desc {
+        width: 100%;
+
+        .seller-create-new-voucher__title {
+            font-size: 24px;
+            margin: 0 0 30px 30px;
+            padding-top: 30px;
+            color: $black;
+            font-weight: bold;
+        }
+
+        .seller-create-new-voucher__desc {
+            font-size: 20px;
+            margin: 0 0 30px 30px;
+            color: $borderDividerAndDesc;
+        }
+    }
+
+    .seller-create-new-voucher__information {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        .seller-create-new-voucher__left {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-left: 20%;
+
+            .seller-create-new-voucher__label {
+                font-size: 16px;
+                color: $black;
+                height: 37px;
+                line-height: 37px;
+            }
+        }
+
+        .seller-create-new-voucher__right {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-right: 20%;
+
+            .seller-create-new-voucher__name {
+                width: 186px;
+                height: 37px;
+                line-height: 37px;
+                border: 1px solid $borderDividerAndDesc;
+                border-radius: 5px;
+                text-align: center;
+            }
+        }
+    }
+
+    .seller-create-new-voucher__cancel-confirm-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+}

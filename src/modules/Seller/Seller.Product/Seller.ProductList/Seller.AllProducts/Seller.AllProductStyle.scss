@@ -1,0 +1,127 @@
+@import '../../../../../utils/variables.scss';
+
+.seller-product__all-list-footer {
+    margin-top: 30px;
+
+    .seller-product__all-list-top {
+        display: grid;
+        grid-template-columns: 3.5fr 5.5fr;
+
+
+        .seller-product-list__left {
+            margin-left: 30px;
+        }
+
+        .seller-product-list__right {
+            display: flex;
+            justify-content: space-between;
+
+            .seller-product-list__product-total {
+                width: 120px;
+                text-align: center;
+            }
+
+            .seller-product-list__product-stock {
+                width: 120px;
+                text-align: center;
+            }
+
+            .seller-product-list__product-sales {
+                width: 150px;
+                text-align: center;
+            }
+
+            .seller-product-list__product-status {
+                width: 200px;
+                text-align: center;
+            }
+
+            .seller-product-list__action {
+                width: 100px;
+                margin-right: 30px;
+                text-align: center;
+            }
+        }
+
+        .seller-product-list__left,
+        .seller-product-list__right {
+            padding: 10px;
+        }
+    }
+
+    .seller-product__all-list-bottom {
+        height: auto;
+
+        .seller-product__information-rows {
+            margin: 1rem 0px;
+            display: grid;
+            grid-template-columns: 3fr 6fr;
+            border-radius: 0 0 5px 5px;
+            padding: 15px;
+
+            .seller-product__all-list-infor-product--left {
+                display: flex;
+                align-items: center;
+
+                .seller-product__all-list-img-product {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                    margin-left: 30px;
+                }
+
+                .seller-product__all-list-name-product {
+                    width: 15rem;
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-line-clamp: 2; // Số dòng tối đa hiển thị
+                    -webkit-box-orient: vertical;
+                    transition: -webkit-line-clamp 0.1s;
+                    line-height: 1.6rem;
+
+                    &:hover {
+                        /* Loại bỏ rút gọn khi hover */
+                        overflow: visible;
+                        white-space: normal;
+                        -webkit-line-clamp: unset;
+                    }
+                }
+            }
+
+            .seller-product__all-list-infor-product--right {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .seller-product__all-list-price-product {
+                    width: 170px;
+                    text-align: center;
+                }
+
+                .seller-product__stock-product {
+                    width: 90px;
+                    text-align: center;
+                }
+
+                .seller-product__sales-product {
+                    width: 170px;
+                    text-align: center;
+                }
+
+                .seller-product__status-product {
+                    width: 100px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    border: 1px solid #ccc;
+                    align-items: center;
+                    // color: $secondary;
+                    text-align: center;
+                    font-weight: bold;
+                    // background-color: $primary;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

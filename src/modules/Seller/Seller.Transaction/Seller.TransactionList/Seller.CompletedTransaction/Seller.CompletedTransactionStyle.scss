@@ -1,0 +1,109 @@
+@import '../../../../../utils/variables.scss';
+
+.seller-transaction__completed-list-container {
+    height: auto;
+    padding-bottom: 30px;
+
+    .seller-transaction__completed-list-top {
+
+        .seller-transaction__completed-list-title {
+            display: grid;
+            grid-template-columns: 6fr 4fr;
+            margin: 30px;
+
+            .seller-transaction-completed-list__left {
+                margin-left: 30px;
+            }
+
+            .seller-transaction-completed-list__right {
+                display: flex;
+                justify-content: space-between;
+
+                .seller-transaction-completed-list__transaction-status {
+                    width: 40%;
+                    text-align: center;
+                    margin-right: 30px;
+                }
+            }
+
+            .seller-transaction-completed-list__left,
+            .seller-transaction-completed-list__right {
+                padding: 10px;
+            }
+        }
+    }
+
+    .seller-transaction__completed-list-bottom {
+        .seller-transaction__completed-list-information {
+            margin: 0 30px 30px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, .2);
+
+            .top {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+
+                .username {
+                    font-weight: bold;
+                    margin-left: 30px;
+                }
+
+                .transaction-id {
+                    margin-right: 30px;
+                }
+            }
+
+            .bottom {
+                display: grid;
+                grid-template-columns: 6fr 4fr;
+                padding: 20px;
+
+                .information-product {
+                    display: flex;
+                    align-items: center;
+
+                    .img {
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 10px;
+                        border-radius: 5px;
+                    }
+
+                    .name {
+                        width: 70%;
+                    }
+
+                    .quantity {
+                        width: 30%;
+                        text-align: center;
+                    }
+                }
+
+                .information-transaction {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .total-money {
+                        width: 40%;
+                        text-align: center;
+                    }
+
+                    .status {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 25%;
+                        height: 25px;
+                        color: $secondary;
+                        text-align: center;
+                        border-radius: 5px;
+                        background-color: $primary;
+                        margin-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

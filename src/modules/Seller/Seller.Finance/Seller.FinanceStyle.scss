@@ -1,0 +1,115 @@
+@import '../../../utils/variables.scss';
+
+.seller-finance__container {
+    display: flex;
+
+    .seller__header {
+        width: 100%;
+    }
+
+    .seller-finance-right__content {
+        flex: 5;
+        position: relative;
+
+        @media screen and (min-width: 740px) and (max-width: 1194px) {
+            width: 50%;
+        }
+
+        .seller-finance__top,
+        .seller-finance__bottom {
+            margin: 30px;
+            height: auto;
+            background-color: $white;
+            border-radius: 10px;
+            --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+            box-shadow: 2px 4px 10px 1px $shadow;
+
+            .seller-finance__income-detail {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .seller-finance__search-order {
+                    width: 25%;
+                    margin-right: 20px;
+                }
+            }
+
+            .seller-finance__title {
+                margin: 0 0 20px 20px;
+                padding-top: 20px;
+                color: $black;
+                font-weight: bold;
+            }
+
+            .seller-finance__data {
+                display: grid;
+                grid-template-columns: 3fr .1fr 5fr;
+                justify-items: start;
+                color: $black;
+
+                .seller-finance__pending {
+                    margin-left: 20px;
+
+                    .seller-finance__pending-title,
+                    .seller-finance__pending-data {
+                        font-weight: bold;
+                    }
+                }
+
+                .seller-finance__released {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    color: $black;
+
+                    .seller-finance__released-left {
+                        margin-left: 20px;
+
+                        .seller-finance__released-title,
+                        .seller-finance__released-data {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .seller-finance__released-right {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        justify-content: space-around;
+                        margin-top: 2.1rem;
+
+                        .seller-finance__released-month,
+                        .seller-finance__released-total {
+
+                            .seller-finance__released-data {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .seller-finance__account-balance {
+                width: 100%;
+                margin: 20px 0 0 20px;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 20px;
+
+                .seller-finance__link {
+                    font-size: 14px;
+                    margin-right: 40px;
+                    color: $black;
+                    background-color: $orderInfors;
+                    padding: 10px;
+                    border-radius: 5px;
+                }
+
+                .seller-finance__link:hover {
+                    color: $avatar;
+                }
+            }
+        }
+    }
+}

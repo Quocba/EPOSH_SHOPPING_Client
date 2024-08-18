@@ -1,0 +1,45 @@
+@import "../../../utils/variables.scss";
+
+.auth {
+  background-color: $white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 180px 100px 50px;
+  .image_auth {
+    width: 70%;
+  }
+  .sign_in {
+    width: 30%;
+    height: 300px;
+
+    margin-top: 150px;
+    .title_sign_in {
+      width: 80%;
+      margin: 20px;
+    }
+    .login {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .button_login {
+      margin: 20px;
+      padding: 18px;
+      height: auto;
+      width: 100%;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .already_account{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+}
+

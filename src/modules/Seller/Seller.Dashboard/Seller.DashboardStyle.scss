@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css?family=Kanit");
+@import "../../../utils/variables.scss";
+
+.seller-page__container {
+  display: flex;
+
+  .home-container {
+    flex: 5;
+    position: relative;
+
+    @media screen and (min-width: 740px) and (max-width: 1194px) {
+      width: 50%;
+    }
+
+    .seller__to-do-list,
+    .seller__create-voucher {
+      margin: 30px;
+      display: flex;
+      gap: 20px;
+      background-color: $white;
+      border-radius: 10px;
+      --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+      box-shadow: 2px 4px 10px 1px $shadow;
+
+      .to-do-list__title {
+        position: absolute;
+        margin: 20px 0px 15px 17px;
+      }
+    }
+
+    .seller__sale-analysis {
+      margin: 30px;
+      gap: 20px;
+      background-color: $white;
+      border-radius: 10px;
+      --webkit-box-shadow: 2px 4px 10px 1px $webkitShadow;
+      box-shadow: 2px 4px 10px 1px $shadow;
+
+      .sale-analysis__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .sale-analysis__title {
+        margin: 20px 0px 20px 17px;
+      }
+
+      .month {
+        margin-right: 20px;
+      }
+    }
+
+    .seller__create-voucher {
+      position: relative;
+
+
+      .create-voucher__title {
+        position: absolute;
+        margin: 20px 0px 20px 17px;
+      }
+    }
+  }
+}
